@@ -22,3 +22,4 @@ EXPOSE 4173
 # Define o comando para rodar o servidor
 CMD ["npm", "run", "serve-heroku"]
 
+#
