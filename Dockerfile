@@ -16,9 +16,9 @@ COPY . .
 # Executa o build da aplicação
 RUN npm run build
 
-# Expõe a porta que o Vite usará
+# Expõe a porta que o servidor usará
 EXPOSE 4173
 
-# Define o comando para rodar a aplicação
-CMD ["npm", "run", "preview"]
+# Define o comando para rodar o servidor
+CMD ["npm", "run", "serve-heroku"]
 
