@@ -4,4 +4,6 @@ services:
     build: .
     ports:
       - "3000:3000"
-    command: npm run serve-local 
+    command: npm run serve-local
+    environment:
+      - VITE_API_URL=http://127.0.0.1:8000 
