@@ -9,6 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "start": "vite preview",
+    "serve-local": "vite preview --port 3000",
     "serve-heroku": "vite --host 0.0.0.0 --port $PORT preview"
   },
   "dependencies": {
