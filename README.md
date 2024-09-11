@@ -31,25 +31,36 @@ O objetivo deste repositório é fornecer a interface gráfica da aplicação, q
 Você pode rodar o projeto localmente usando Docker ou configurando manualmente em sua máquina.
 
 ### Rodando com Docker
-1. **Construa a imagem Docker:**
-Navegue até a pasta raiz do projeto e execute o seguinte comando para construir a imagem Docker:
+
+1. **Clone o repositório:**
 
    ```bash
-   docker build -t my-frontend-app .
+   git clone git@github.com:naiaraxavier/challenge-jobber-frontend.git
    ```
 
-2. **Execute o container Docker:**
-Após a construção da imagem, você pode executar o container com o seguinte comando:
+2. **Navegue até o diretório raiz do projeto:**
 
    ```bash
-   docker run -p 3000:3000 my-frontend-app
+   cd challenge-jobber-frontend
    ```
 
-Isso irá mapear a porta 3000 do container para a porta 3000 do seu host, permitindo que você acesse o frontend no navegador.
 
-3. **Acesse o frontend no navegador:**
+3. **Configure as variáveis de Ambiente:**
+
+- Copie o arquivo .env_example e renomeie para .env.
+- Preencha as variáveis de ambiente no arquivo .env com as informações adequadas
+
+
+4. **Suba o container com Docker Compose:**
+
+   ```bash
+   docker-compose up --build
+   ```
+
+5. **Acesse o frontend no navegador:**
 
    [http://localhost:3000](http://localhost:3000)
+
 
 ### Rodando Localmente (sem Docker)
 
