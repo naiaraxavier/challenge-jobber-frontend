@@ -18,6 +18,8 @@ export const HomePage = () => {
 
   useEffect(() => {
     get("/api/jobs/");
+    console.log(jobs);
+    
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
